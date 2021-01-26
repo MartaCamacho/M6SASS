@@ -10,8 +10,17 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+
+  height: 100vh;
+  width: 100vw;
+}
 body {
-  margin: 10px 0 0 0;
+  /* padding: 10px 0 0 0; */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 h1 {
   font-size: 3.5vw;
@@ -20,17 +29,17 @@ h1 {
   font-family: "Lato";
 }
 .strips {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 98%;
   overflow: hidden;
   text-align: center;
   display: flex;
   cursor: pointer;
   .strip {
     position: relative;
-    width: 19.9vw;
-    margin: 0.1vw;
-    height: 100vh;
+    width: 19.9%;
+    margin: 0.1%;
+    height: 97%;
     display: flex;
     text-align: center;
     overflow: hidden;
@@ -38,7 +47,7 @@ h1 {
     justify-content: center;
     .strip_content {
       @include flexbox-and-position;
-      height: 100vh;
+      height: 100%;
       width: 100%;
       text-align: center;
     }
@@ -49,8 +58,8 @@ h1 {
     z-index: 1;
     top: 0;
     left: 0;
-    width: 20vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: white;
     opacity: 0.05;
     transform-origin: center center;
